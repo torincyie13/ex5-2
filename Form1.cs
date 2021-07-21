@@ -36,7 +36,7 @@ namespace ex5_2
             authorsCommand = new SqlCommand("Select * from Authors ORDER BY Author", booksConnection);
             //establish data adapter/data table
             authorsAdapter = new SqlDataAdapter();
-            auhtorsAdapter.SelectCommand = authorsCommand;
+            authorsAdapter.SelectCommand = authorsCommand;
             authorsTable = new DataTable();
             authorsAdapter.Fill(authorsTable);
             // bind controls to data table
